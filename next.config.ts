@@ -9,8 +9,6 @@ module.exports = {
 
     config.devtool = 'source-map';
 
-    config.resolve.extensions = ['.ts', '.tsx', '.js', '.jsx']
-
     config.module.rules.push(
       {
         test: /\.(css|scss)/,
