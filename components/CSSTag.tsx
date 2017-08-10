@@ -1,8 +1,7 @@
 import * as React from 'react'
-import PropTypes from 'prop-types'
 
 interface Props {
-  style: string
+  style: any
 }
 
 const dev = process.env.NODE_ENV === 'development'

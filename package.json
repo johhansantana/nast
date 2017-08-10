@@ -16,7 +16,7 @@
     "express": "^4.15.4",
     "express-logging": "^1.1.1",
     "logops": "^2.1.0",
-    "next": "latest",
+    "next": "^3.0.3",
     "react": "^15.5.4",
     "react-dom": "^15.5.4"
   },
