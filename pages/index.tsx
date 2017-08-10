@@ -1,8 +1,7 @@
 import * as React from 'react'
-import MyComponent from '!/components/MyComponent'
+import Index from '!/containers/index'
 
 export default () =>
   <div>
-    <h1>Hello world</h1>
-    <MyComponent />
+    <Index />
   </div>
