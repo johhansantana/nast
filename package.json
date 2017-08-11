@@ -5,7 +5,7 @@
     "gulp": "./node_modules/gulp/bin/gulp.js",
     "postcss": "postcss --config postcss.config.js --replace ./static/css/app.css",
     "css:prod": "npm run gulp && npm run postcss",
-    "dev": "concurrently \"tsc --watch\" next",
+    "dev": "concurrently \"tsc --watch\" \"node server.babel.js -p $PORT\"",
     "build": "npm run css:prod && next build",
     "start": "NODE_ENV=production node server.babel.js -p $PORT",
     "heroku-build": "next build",
