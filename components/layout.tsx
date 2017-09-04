@@ -1,7 +1,10 @@
 import * as React from 'react'
 import Head from 'next/head';
 import CSSTag from './CSSTag';
-import home from '!/styles/home.scss';
+let home
+if (process.env.NODE_ENV !== 'production') {
+  home = require('!/styles/home.scss')
+}
 
 interface State {
   production: boolean
