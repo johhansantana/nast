@@ -1,26 +1,9 @@
-import * as React from 'react'
-import { ApolloProvider } from 'react-apollo'
-import apolloClient from '!/lib/initApollo'
-import initRedux from '!/lib/initRedux'
-import Index from '!/containers'
-/**
- * Component to show the home container.
- */
-class App extends React.Component {
-  public apollo: any
-  public store: any
-  constructor(props) {
-    super(props)
-    this.apollo = apolloClient()
-    this.store = initRedux(this.apollo, {})
-  }
+import React from 'react'
+import Link from 'next/link'
 
-  render() {
-    return (
-      <ApolloProvider client={this.apollo} store={this.store}>
-        <Index {...this.props} />
-      </ApolloProvider>
-    );
-  }
-}
-export default App;
+export default () => (
+  <ul>
+    <li><Link href='/b' as='/a'><a>a</a></Link></li>
+    <li><Link href='/a' as='/b'><a>b</a></Link></li>
+  </ul>
+)
