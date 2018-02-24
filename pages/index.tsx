@@ -4,15 +4,9 @@ import apolloClient from "!/lib/initApollo";
 import Index from "!/containers";
 
 class App extends React.Component {
-  public apollo: any;
-  constructor(props) {
-    super(props);
-    this.apollo = apolloClient();
-  }
-
   render() {
     return (
-      <ApolloProvider client={this.apollo}>
+      <ApolloProvider client={apolloClient()}>
         <Index {...this.props} />
       </ApolloProvider>
     );

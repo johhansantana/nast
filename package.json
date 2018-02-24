@@ -7,18 +7,24 @@
     "start": "NODE_ENV=production node lib/index.js"
   },
   "dependencies": {
+    "apollo-cache-inmemory": "^1.1.9",
+    "apollo-client": "^2.2.5",
+    "apollo-link-http": "^1.5.1",
+    "graphql": "^0.13.1",
+    "graphql-tag": "^2.8.0",
+    "isomorphic-unfetch": "^2.0.0",
     "next": "latest",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "react-apollo": "^1.4.11"
+    "react-apollo": "^2.0.4",
+    "react-dom": "^16.2.0"
   },
   "devDependencies": {
     "@types/next": "^2.4.7",
     "@types/react": "^16.0.36",
     "@zeit/next-typescript": "^0.0.8",
-    "nodemon": "^1.12.1",
     "babel-plugin-root-import": "^5.1.0",
     "babel-preset-es2015": "^6.24.1",
+    "nodemon": "^1.12.1",
     "ts-node": "^4.1.0",
     "typescript": "^2.7.1"
   }
