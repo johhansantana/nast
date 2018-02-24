@@ -2,7 +2,7 @@ import * as React from "react";
 import Layout from "!/components/layout";
 
 const Index: React.SFC = () => (
-  <Layout title="Login">
+  <Layout title="Home">
     <div>hello</div>
   </Layout>
 );

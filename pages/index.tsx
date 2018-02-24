@@ -1,9 +1,21 @@
-import React from 'react'
-import Link from 'next/link'
+import * as React from "react";
+import { ApolloProvider } from "react-apollo";
+import apolloClient from "!/lib/initApollo";
+import Index from "!/containers";
 
-export default () => (
-  <ul>
-    <li><Link href='/b' as='/a'><a>a</a></Link></li>
-    <li><Link href='/a' as='/b'><a>b</a></Link></li>
-  </ul>
-)
+class App extends React.Component {
+  public apollo: any;
+  constructor(props) {
+    super(props);
+    this.apollo = apolloClient();
+  }
+
+  render() {
+    return (
+      <ApolloProvider client={this.apollo}>
+        <Index {...this.props} />
+      </ApolloProvider>
+    );
+  }
+}
+export default App;
