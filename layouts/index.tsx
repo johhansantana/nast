@@ -15,6 +15,10 @@ const Layout = ({ title, children }: Props) => (
     </Head>
 
     {children}
+
+    <footer>
+      <a href="https://github.com/johhansantana/nast">Github</a>
+    </footer>
   </div>
 );
 export default Layout;
