@@ -1,6 +1,6 @@
 {
   "name": "nast",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "scripts": {
     "dev": "nodemon server/index.ts",
     "build": "next build && tsc --module commonjs",
