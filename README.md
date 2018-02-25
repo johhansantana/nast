@@ -19,5 +19,5 @@ https://nast.now.sh/
 
 ### TODOS
 
-* [ ] Make scss work
+* [x] Make scss work
 * [ ] Make a server side render example with graphql/apollo

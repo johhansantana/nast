@@ -11,6 +11,7 @@
     "alias": "nast"
   },
   "dependencies": {
+    "@zeit/next-sass": "^0.1.1",
     "apollo-cache-inmemory": "^1.1.9",
     "apollo-client": "^2.2.5",
     "apollo-link-http": "^1.5.1",
@@ -18,6 +19,7 @@
     "graphql-tag": "^2.8.0",
     "isomorphic-unfetch": "^2.0.0",
     "next": "latest",
+    "node-sass": "^4.7.2",
     "react": "^16.2.0",
     "react-apollo": "^2.0.4",
     "react-dom": "^16.2.0"
